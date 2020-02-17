@@ -28,7 +28,18 @@
         <h1>МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
             <section>
               <h2>Фильтр товаров</h2>
-              <form  class="filter" action="https://echo.htmlacademy.ru" method="post">
+              <form  class="filter" action="https://echo.htmlacademy.ru" method="get">
+                <label for="price-range">Стоимость:</label><br>
+                <input type="range" name="price" id="price-range" step="1" min="0" max="15000">
+                <fieldset>
+                  <legend>Сортировать:</legend>
+                  <ul>
+                    <li><label><input type="radio" name="price">По цене</label></li>
+                    <li><label><input type="radio" name="type">По типу</label></li>
+                    <li><label><input type="radio" name="object-name">По названию</label></li>
+
+                  </ul>
+                </fieldset>
                 <fieldset>
                 <legend>Сетка:</legend>
                   <ul>
@@ -149,8 +160,9 @@
       </tr>
       
     </table>
-    </fieldset> 
+    </fieldset>
     </form>
+    <button type="button">Закрыть</button>
   </footer> 
 </body>
 </html>
