@@ -28,7 +28,29 @@
         <h1>МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
             <section>
               <h2>Фильтр товаров</h2>
-              <!-- Здесь будет форма -->
+              <form  class="filter" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                <legend>Сетка:</legend>
+                  <ul>
+                    <li><label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label></li>
+                    <li><label><input type="radio" name="grid" value="fixed">Фиксированная</label></li>
+                    <li><label><input type="radio" name="grid" value="rubber">Резиновая</label></li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                  <legend>Особенности:</legend>
+                    <ul>
+                      <li><label><input type="checkbox" name="slider" checked="">Слайдер</label></li>
+                      <li><label><input type="checkbox" name="benefits">Блок преимуществ</label></li>
+                      <li><label><input type="checkbox" name="news" checked="">Новости</label></li>
+                      <li><label><input type="checkbox" name="gallery">Галерея</label></li>
+                      <li><label><input type="checkbox" name="basket">Корзина</label></li>
+                          
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+                <h3>Особенности:</h3>
+              </form>
             </section>
             <section>
               <h2>Список готовых шаблонов</h2>
@@ -87,7 +109,7 @@
                       <p>191186, Санкт-Петербург<br> ул. Б.Конюшенная, д.19/8</p>
                       <p><a href="тел. +7(812)275-75-75"> тел. +7(812)275-75-75 </a></p>
                     </address>
-                    
+
                   <button type="button">Напишите нам</button>
                   <img src="img/map.png" width="1140" height="420" alt="Карта">
             </section>
@@ -103,6 +125,32 @@
         <li><a href="#"><img src="img/insta-icon.svg" width="80" height="80" alt="Инстаграм"></a></li>
       </ul>
     </div>
+    <form  class="contact-us" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <legend>Напишите нам</legend>
+    <table>
+      <tr>
+        <td><label for="personal-info">Ваше имя:</label></td>
+        <td><label for="e-mail">Ваш e-mail:</label></td>
+      </tr>
+      <tr>
+        <td><input type="text" name="name" id="personal-info" placeholder="Имя Фамилия"></td>
+        <td><input type="e-mail" name="e-mail" id="e-mail" placeholder="email@example.com"></td>
+      </tr>
+      <tr>
+        <td><label for="comment-field" >Текст письма:</label></td>
+      </tr>
+      <tr>
+        <td colspan="2"><textarea name="comments" id="comment-field" placeholder="В свободной форме" rows="5" cols="34"></textarea></td>
+
+      </tr>
+      <tr>
+        <td><button type="submit">Отправить</button></td>
+      </tr>
+      
+    </table>
+    </fieldset> 
+    </form>
   </footer> 
 </body>
 </html>
