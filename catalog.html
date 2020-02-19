@@ -3,54 +3,59 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet
   </head>
   <body>
-  	<header>
-  	
-  		<nav>
-  			<a href="index.html">
+  	<header class="main-header">
+    
+      <nav class="main-navigation">
+  			<a class="main-header-logo" href="index.html">
   			<img src="img/nerds-logo.svg" width="150" height="100" alt="Логотип Нердс">
   			</a>
-  			<ul>
+  			<ul class="site-navigation">
                  <li><a href="studio.html">Студия</a></li>
                  <li><a href="clients.html">Клиенты</a></li>
-                 <li>Магазин</li>
+                 <li class="site-navigation-current">Магазин</li>
                  <li><a href="contacts.html">Контакты</a></li>
              </ul>
-             <ul>
+             <ul class="user-navigation">
              	<li>
-             		<button type="button">Корзина</button>
+             		<a href="catalog-item.html">Корзина</a>
              	</li>
              </ul>
   		</nav>
   	</header>
-    <main>
-        <h1>МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
-            <section>
-              <h2>Фильтр товаров</h2>
+    <main class="container">
+        <h1 class="page-title-catalog">Магазин готовых шаблонов</h1>
+
+
+            <section >
+              <h2 class="visually-hidden">Фильтр товаров</h2>
               <form  class="filter" action="https://echo.htmlacademy.ru" method="get">
-                <label for="price-range">Стоимость:</label><br>
+                <label for="price-range" class="filter-variation">Стоимость:</label><br>
                 <input type="range" name="price" id="price-range" step="1" min="0" max="15000">
-                <fieldset>
-                  <legend>Сортировать:</legend>
-                  <ul>
+                <fieldset class="border">
+                  <legend class="filter-variation">Сортировать:</legend>
+                  <ul class="filters">
                     <li><label><input type="radio" name="price">По цене</label></li>
                     <li><label><input type="radio" name="type">По типу</label></li>
                     <li><label><input type="radio" name="object-name">По названию</label></li>
 
                   </ul>
                 </fieldset>
-                <fieldset>
-                <legend>Сетка:</legend>
-                  <ul>
+                <fieldset class="border">
+                <legend class="filter-variation">Сетка:</legend>
+                  <ul class="filters">
                     <li><label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label></li>
                     <li><label><input type="radio" name="grid" value="fixed">Фиксированная</label></li>
                     <li><label><input type="radio" name="grid" value="rubber">Резиновая</label></li>
                   </ul>
                 </fieldset>
-                <fieldset>
-                  <legend>Особенности:</legend>
-                    <ul>
+                <fieldset class="border">
+                  <legend class="filter-variation">Особенности:</legend>
+                    <ul class="filters">
                       <li><label><input type="checkbox" name="slider" checked="">Слайдер</label></li>
                       <li><label><input type="checkbox" name="benefits">Блок преимуществ</label></li>
                       <li><label><input type="checkbox" name="news" checked="">Новости</label></li>
@@ -59,58 +64,77 @@
                           
                     </ul>
                 </fieldset>
-                <button type="submit">Показать</button>
-                <h3>Особенности:</h3>
+                <button type="submit" class="show">Показать</button>
               </form>
             </section>
-            <section>
-              <h2>Список готовых шаблонов</h2>
-              <ul>
+
+
+            <section class="catalog-of-items">
+              <h2 class="visually-hidden">Список готовых шаблонов</h2>
+              <ul class="list-of-items">
                 <li>
-                  <h3>Шаблон Sedona</h3>
+                  <h3 class="visually-hidden">Шаблон Sedona</h3>
                   <p>
+                    <a href="catalog-item.html">
                     <img src="img/img-sedona.jpg" width="360" height="580" alt="Шаблон Sedona">
+                    </a>
                   </p>
-                  <p>sedona</p>
-                  <p>Информационный сайт<br> для туристов</p>
-                  <a href="order.html">9900 руб.</a>
+                  <a href="catalog-item.html" class="maket">
+                    <span ><b>sedona</b></span><br>
+                   </a> 
+                   <span class="maket-info">Информационный сайт<br> для туристов</span>
+                  
+                    <p class="catalog-item-price">
+                      <a href="order.html">9900 руб.</a>
+                    </p>
                 </li>
                 <li>
-                  <h3>Шаблон PInk</h3>
+                  <h3 class="visually-hidden">Шаблон PInk</h3>
                   <p>
+                    <a href="catalog-item.html">
                     <img src="img/img-pink.jpg" width="360" height="580" alt="Шаблон Pink">
+                   </a>
                   </p>
                 </li>
                 <li>
-                  <h3>Шаблон Borodinski</h3>
+                  <h3 class="visually-hidden">Шаблон Borodinski</h3>
                   <p>
+                    <a href="catalog-item.html">
                     <img src="img/img-barbershop.jpg" width="360" height="580" alt="Шаблон Borodinski">
+                   </a>
                   </p>
                 </li>
                 <li>
-                  <h3>Шаблон Mishka</h3>
+                  <h3 class="visually-hidden">Шаблон Mishka</h3>
                   <p>
+                    <a href="catalog-item.html">
                     <img src="img/img-mishka.jpg" width="360" height="580" alt="Шаблон Mishka">
+                   </a>
                   </p>
                 </li>
                 <li>
-                  <h3>Шаблон Обучение</h3>
+                  <h3 class="visually-hidden">Шаблон Обучение</h3>
                   <p>
+                    <a href="catalog-item.html">
                     <img src="img/img-aplus.jpg" width="360" height="580" alt="Шаблон Обучение">
+                     </a>
                   </p>
                 </li>
                 <li>
-                  <h3>Шаблон КВАСТ</h3>
+                  <h3 class="visually-hidden">Шаблон КВАСТ</h3>
                   <p>
+                    <a href="catalog-item.html">
                     <img src="img/img-kvast.jpg" width="360" height="580" alt="Шаблон КВАСТ">
+                    </a>
                   </p>
                 </li>
               </ul>
-              <ul>
-                <li><a>1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">СЛЕДУЮЩАЯ</a></li>
+
+              <ul class="pagination-list">
+                <li class="pagination-item"><a>1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item" class="next"><a href="#">следующая</a></li>
               </ul>
             </section>
             <section>
@@ -129,15 +153,16 @@
     <p>Давайте дружить, это выгодно!<br>
        Скидка 10% для друзей из социальных сетей.
     </p>
-    <div>
-      <ul>
-        <li><a href="#"><img src="img/vk-icon.svg" width="80" height="80" alt="Вконтакте"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="80" height="80" alt="Фейсбук"></a></li>
-        <li><a href="#"><img src="img/insta-icon.svg" width="80" height="80" alt="Инстаграм"></a></li>
+      <div>
+      <ul class="social-links">
+        <li class="social-links-vk"><a href="#"><img src="img/vk-icon.svg" width="40" height="40" alt="Вконтакте"></a></li><br>
+        <li class="social-links-fb"><a href="#"><img src="img/fb-icon.svg" width="40" height="40" alt="Фейсбук"></a></li>
+        <li class="social-links-inst"><a href="#"><img src="img/insta-icon.svg" width="40" height="40" alt="Инстаграм"></a></li>
       </ul>
     </div>
+
     <form  class="contact-us" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset>
+      <fieldset class="contact-form">
         <legend>Напишите нам</legend>
     <table>
       <tr>
