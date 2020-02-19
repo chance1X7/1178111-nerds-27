@@ -176,6 +176,13 @@ a{
 	color: black;
 	font-size: 16px;
 	line-height: 30px;
+	font-weight: bold;
+}
+.site-navigation-current{
+	color: black;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: bold;
 }
 
 .site-navigation a:hover,
